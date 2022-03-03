@@ -2,7 +2,7 @@
 # This file lists all sources that will be compiles into the precice library
 #
 
-target_sources(precice
+target_sources(preciceInternal
     PRIVATE
     ${CMAKE_BINARY_DIR}/src/precice/impl/versions.cpp
     ${CMAKE_BINARY_DIR}/src/precice/impl/versions.hpp
@@ -175,10 +175,10 @@ target_sources(precice
     src/mapping/Mapping.hpp
     src/mapping/NearestNeighborBaseMapping.cpp
     src/mapping/NearestNeighborBaseMapping.hpp
-    src/mapping/NearestNeighborMapping.cpp
-    src/mapping/NearestNeighborMapping.hpp
     src/mapping/NearestNeighborGradientMapping.cpp
     src/mapping/NearestNeighborGradientMapping.hpp
+    src/mapping/NearestNeighborMapping.cpp
+    src/mapping/NearestNeighborMapping.hpp
     src/mapping/NearestProjectionMapping.cpp
     src/mapping/NearestProjectionMapping.hpp
     src/mapping/PetRadialBasisFctMapping.hpp
